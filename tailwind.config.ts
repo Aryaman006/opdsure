@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Outfit', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -120,6 +124,13 @@ export default {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-sunset": "var(--gradient-sunset)",
         "gradient-tropical": "var(--gradient-tropical)",
+        "gradient-depth": "var(--gradient-depth)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
+        glow: "var(--shadow-glow)",
       },
     },
   },
