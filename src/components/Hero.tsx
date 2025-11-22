@@ -1,100 +1,131 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-beach-yoga.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary via-accent to-primary">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-40 left-20 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-tropical">
+      {/* Soft floating orbs */}
+      <div className="absolute inset-0 overflow-hidden opacity-60">
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/3 left-1/4 w-[400px] h-[400px] bg-gradient-to-br from-secondary/15 to-primary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
       </div>
 
-      {/* Background Image */}
-      <div className="absolute inset-0 mix-blend-overlay opacity-40">
+      {/* Hero Image - subtle overlay */}
+      <div className="absolute inset-0 opacity-20">
         <img 
           src={heroImage} 
           alt="Tropical beach yoga at sunset" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover mix-blend-luminosity"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-secondary/20 backdrop-blur-md rounded-full border border-secondary/40">
-              <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-              <p className="text-background font-semibold text-sm tracking-wide">LIMITED TO 12 PARTICIPANTS</p>
-            </div>
-            
-            <h1 className="text-6xl md:text-8xl font-display font-bold text-background leading-[0.95] tracking-tight">
-              Tropical
-              <span className="block italic text-secondary mt-2">Edge</span>
-              <span className="block text-5xl md:text-6xl font-light mt-4">Malaysia</span>
-            </h1>
-            
-            <p className="text-2xl md:text-3xl text-background/90 leading-relaxed font-light">
-              Where ocean waves meet jungle rhythms. 
-              <span className="block font-semibold mt-2">Transform in paradise.</span>
-            </p>
+      <div className="relative z-10 container mx-auto px-6 lg:px-12 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+            {/* Left: Main Content */}
+            <div className="lg:col-span-7 space-y-10 animate-gentle-fade">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/80 backdrop-blur-sm rounded-full border border-primary/10 shadow-soft">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <p className="text-sm font-medium text-foreground tracking-wide">Limited to 12 Guests</p>
+              </div>
+              
+              {/* Main Heading */}
+              <div className="space-y-6">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-display font-light text-foreground leading-[1.05] text-balance">
+                  Tropical Edge
+                  <span className="block font-normal italic text-primary mt-2">Malaysia</span>
+                </h1>
+                
+                <div className="h-1 w-24 bg-gradient-to-r from-secondary to-primary rounded-full" />
+              </div>
+              
+              {/* Subheading */}
+              <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground leading-relaxed font-light max-w-2xl text-balance">
+                Where ancient practices meet tropical paradise. 
+                <span className="block mt-3 text-foreground font-normal">A journey of body, mind & spirit.</span>
+              </p>
 
-            <div className="flex flex-col gap-4 pt-6">
-              <Button 
-                size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-background text-xl px-10 py-8 rounded-2xl shadow-glow font-semibold hover:scale-105 transition-all duration-300"
-              >
-                Secure Your Spot
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="bg-background/95 backdrop-blur-sm border-2 border-background text-primary hover:bg-background text-xl px-10 py-8 rounded-2xl font-semibold"
-              >
-                Download Brochure
-              </Button>
-            </div>
-          </div>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90 text-white text-lg px-10 py-7 rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 hover:scale-[1.02]"
+                >
+                  Reserve Your Space
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="bg-white/80 backdrop-blur-sm border-2 border-foreground/10 text-foreground hover:bg-white hover:border-primary/30 text-lg px-10 py-7 rounded-2xl transition-all duration-500"
+                >
+                  View Itinerary
+                </Button>
+              </div>
 
-          {/* Right Info Cards */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-background/95 backdrop-blur-xl p-8 rounded-3xl shadow-strong border border-primary/10">
-              <div className="flex items-start gap-4">
-                <Calendar className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Dates</p>
-                  <p className="text-3xl font-display font-bold text-foreground">January 23-27</p>
-                  <p className="text-xl text-foreground/70 mt-1">2026</p>
+              {/* Early Bird Notice */}
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-secondary/10 backdrop-blur-sm rounded-2xl border border-secondary/20">
+                <div className="flex -space-x-1">
+                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
+                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
+                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
                 </div>
+                <p className="text-sm text-foreground/80">
+                  <span className="font-semibold text-secondary">Early Bird:</span> Save 20% before July 31st
+                </p>
               </div>
             </div>
 
-            <div className="bg-background/95 backdrop-blur-xl p-8 rounded-3xl shadow-strong border border-accent/10">
-              <div className="flex items-start gap-4">
-                <MapPin className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Location</p>
-                  <p className="text-3xl font-display font-bold text-foreground">Cherating Beach</p>
-                  <p className="text-xl text-foreground/70 mt-1">Malaysia</p>
+            {/* Right: Info Cards */}
+            <div className="lg:col-span-5 space-y-6 animate-gentle-fade" style={{ animationDelay: '0.2s' }}>
+              {/* Date Card */}
+              <div className="bg-white/90 backdrop-blur-xl p-8 lg:p-10 rounded-3xl shadow-medium border border-primary/5 hover:shadow-strong transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-7 h-7 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-3">When</p>
+                    <p className="text-3xl lg:text-4xl font-display font-medium text-foreground">January 23–27</p>
+                    <p className="text-lg text-muted-foreground mt-1.5">2026</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-gradient-to-br from-secondary to-orange-500 p-8 rounded-3xl shadow-strong text-background">
-              <p className="text-sm font-bold uppercase tracking-wider mb-3">Early Bird Special</p>
-              <p className="text-4xl font-display font-bold mb-2">Save 20%</p>
-              <p className="text-lg opacity-90">Book before July 31st, 2025</p>
+              {/* Location Card */}
+              <div className="bg-white/90 backdrop-blur-xl p-8 lg:p-10 rounded-3xl shadow-medium border border-accent/5 hover:shadow-strong transition-all duration-500 hover:-translate-y-1">
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-7 h-7 text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-3">Where</p>
+                    <p className="text-3xl lg:text-4xl font-display font-medium text-foreground">Cherating Beach</p>
+                    <p className="text-lg text-muted-foreground mt-1.5">Malaysia</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Investment Highlight */}
+              <div className="relative overflow-hidden bg-gradient-to-br from-secondary/20 via-primary/10 to-accent/20 p-8 lg:p-10 rounded-3xl shadow-soft border border-secondary/20">
+                <div className="relative z-10">
+                  <p className="text-xs font-semibold text-foreground/70 uppercase tracking-widest mb-3">Investment</p>
+                  <p className="text-2xl font-display text-foreground mb-1">From $1,850</p>
+                  <p className="text-sm text-muted-foreground">All-inclusive experience</p>
+                </div>
+                <div className="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/20 rounded-full blur-2xl" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-7 h-12 border-2 border-background/60 rounded-full flex items-start justify-center p-2.5">
-          <div className="w-1.5 h-4 bg-background/60 rounded-full" />
+      {/* Refined Scroll Indicator */}
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+        <div className="w-6 h-10 border border-foreground/30 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-3 bg-foreground/30 rounded-full" />
         </div>
       </div>
     </section>
