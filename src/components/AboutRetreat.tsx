@@ -1,5 +1,5 @@
 import { Sparkles, Heart, Users, Mountain, Waves, Sun } from "lucide-react";
-import tropicalImage from "@/assets/tropical-paradise.jpg";
+import tropicalImage from "@/assets/about-cartoon-retreat.jpg";
 
 export const AboutRetreat = () => {
   return (
@@ -30,13 +30,13 @@ export const AboutRetreat = () => {
         {/* Main Content with Image */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
           {/* Image with Quote Overlay */}
-          <div className="relative rounded-[3rem] overflow-hidden shadow-strong animate-scale-in order-2 lg:order-1 border-4 border-white">
+          <div className="relative rounded-[3rem] overflow-hidden shadow-strong animate-scale-in order-2 lg:order-1">
             <img 
               src={tropicalImage} 
-              alt="Tropical paradise beach setting in Malaysia" 
+              alt="Colorful cartoon illustration of tropical yoga retreat with people practicing by the ocean" 
               className="w-full h-[500px] object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-medium border-2 border-primary/30">
                 <Sun className="w-10 h-10 text-secondary mb-4" />
