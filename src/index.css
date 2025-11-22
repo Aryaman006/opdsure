@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 28 25% 12%;
-    --foreground: 35 60% 92%;
-    --card: 28 20% 16%;
-    --card-foreground: 35 60% 92%;
-    --popover: 28 20% 16%;
-    --popover-foreground: 35 60% 92%;
-    --primary: 180 45% 55%;
-    --primary-foreground: 28 25% 12%;
-    --secondary: 38 95% 70%;
-    --secondary-foreground: 28 25% 12%;
-    --muted: 28 15% 25%;
-    --muted-foreground: 35 20% 65%;
-    --accent: 165 40% 50%;
-    --accent-foreground: 35 60% 92%;
-    --destructive: 0 70% 55%;
-    --destructive-foreground: 35 60% 92%;
-    --border: 28 15% 22%;
-    --input: 28 15% 22%;
-    --ring: 180 45% 55%;
-    --radius: 0.75rem;
+    --background: 200 95% 97%;
+    --foreground: 220 40% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 20%;
+    --primary: 195 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 95% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 200 30% 90%;
+    --muted-foreground: 220 25% 45%;
+    --accent: 140 60% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 195 85% 50%;
+    --radius: 1.25rem;
     
-    --chart-1: 180 45% 55%;
-    --chart-2: 165 40% 50%;
-    --chart-3: 38 95% 70%;
-    --chart-4: 25 85% 65%;
-    --chart-5: 340 70% 60%;
+    --chart-1: 195 85% 50%;
+    --chart-2: 140 60% 50%;
+    --chart-3: 25 95% 60%;
+    --chart-4: 45 100% 55%;
+    --chart-5: 340 85% 65%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(180 45% 25%) 0%, hsl(165 40% 20%) 100%);
-    --gradient-sunset: linear-gradient(120deg, hsl(38 95% 50%) 0%, hsl(25 85% 55%) 100%);
-    --gradient-overlay: linear-gradient(90deg, hsl(28 25% 12% / 0.95) 0%, hsl(28 25% 12% / 0.6) 50%, transparent 100%);
-    --gradient-card: linear-gradient(135deg, hsl(28 20% 18%) 0%, hsl(28 20% 14%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 85% 65%) 0%, hsl(195 85% 45%) 100%);
+    --gradient-sunset: linear-gradient(120deg, hsl(25 95% 65%) 0%, hsl(340 85% 65%) 100%);
+    --gradient-overlay: linear-gradient(90deg, hsl(200 95% 97% / 0.95) 0%, hsl(200 95% 97% / 0.7) 50%, transparent 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(200 80% 98%) 100%);
     
-    --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.4);
-    --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.5);
-    --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 0 60px hsl(180 45% 55% / 0.3);
+    --shadow-soft: 0 4px 24px rgba(0, 120, 180, 0.12);
+    --shadow-medium: 0 8px 40px rgba(0, 120, 180, 0.15);
+    --shadow-strong: 0 20px 60px rgba(0, 120, 180, 0.2);
+    --shadow-glow: 0 0 60px hsl(195 85% 50% / 0.4);
 
     --sidebar-background: 28 25% 12%;
     --sidebar-foreground: 35 60% 92%;
@@ -56,33 +56,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 28 25% 12%;
-    --foreground: 35 60% 92%;
-    --card: 28 20% 16%;
-    --card-foreground: 35 60% 92%;
-    --popover: 28 20% 16%;
-    --popover-foreground: 35 60% 92%;
-    --primary: 180 45% 55%;
-    --primary-foreground: 28 25% 12%;
-    --secondary: 38 95% 70%;
-    --secondary-foreground: 28 25% 12%;
-    --muted: 28 15% 25%;
-    --muted-foreground: 35 20% 65%;
-    --accent: 165 40% 50%;
-    --accent-foreground: 35 60% 92%;
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 35 60% 92%;
-    --border: 28 15% 22%;
-    --input: 28 15% 22%;
-    --ring: 180 45% 55%;
-    --sidebar-background: 28 25% 12%;
-    --sidebar-foreground: 35 60% 92%;
-    --sidebar-primary: 180 45% 55%;
-    --sidebar-primary-foreground: 28 25% 12%;
-    --sidebar-accent: 28 20% 18%;
-    --sidebar-accent-foreground: 35 60% 92%;
-    --sidebar-border: 28 15% 22%;
-    --sidebar-ring: 180 45% 55%;
+    --background: 200 95% 97%;
+    --foreground: 220 40% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 20%;
+    --primary: 195 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 95% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 200 30% 90%;
+    --muted-foreground: 220 25% 45%;
+    --accent: 140 60% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 195 85% 50%;
+    --sidebar-background: 200 95% 97%;
+    --sidebar-foreground: 220 40% 20%;
+    --sidebar-primary: 195 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 100%;
+    --sidebar-accent-foreground: 220 40% 20%;
+    --sidebar-border: 200 30% 85%;
+    --sidebar-ring: 195 85% 50%;
   }
 }
 
@@ -96,7 +96,7 @@ All colors MUST be HSL.
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -106,30 +106,44 @@ All colors MUST be HSL.
   }
   
   .animate-float {
-    animation: float 8s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
   }
   
   @keyframes float {
     0%, 100% {
-      transform: translateY(0px);
+      transform: translateY(0px) rotate(0deg);
     }
     50% {
-      transform: translateY(-15px);
+      transform: translateY(-20px) rotate(2deg);
     }
   }
   
-  .animate-gentle-fade {
-    animation: gentleFade 1.2s ease-out forwards;
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
   }
   
-  @keyframes gentleFade {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
+  @keyframes bounce-slow {
+    0%, 100% {
       transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-wiggle {
+    animation: wiggle 4s ease-in-out infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
     }
   }
 }
