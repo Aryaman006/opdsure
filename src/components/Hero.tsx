@@ -4,129 +4,147 @@ import heroImage from "@/assets/hero-cartoon-beach.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-stretch overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-      {/* Playful Background Elements */}
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      {/* Dynamic Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute top-40 right-20 w-40 h-40 bg-secondary/20 rounded-full blur-3xl animate-bounce-slow" style={{ animationDelay: '0.5s' }} />
-        <div className="absolute bottom-32 left-1/4 w-36 h-36 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-        <Waves className="absolute top-1/4 right-10 w-16 h-16 text-primary/10 animate-wiggle" />
-        <Sun className="absolute top-10 right-1/3 w-20 h-20 text-secondary/20 animate-bounce-slow" />
+        <div className="absolute top-20 left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-60 right-32 w-56 h-56 bg-secondary/15 rounded-full blur-3xl animate-bounce-slow" style={{ animationDelay: '0.3s' }} />
+        <div className="absolute bottom-40 left-1/3 w-48 h-48 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '0.7s' }} />
+        <Waves className="absolute top-1/3 right-20 w-20 h-20 text-primary/10 animate-wiggle" />
+        <Sparkles className="absolute bottom-1/4 left-20 w-16 h-16 text-secondary/10 animate-pulse" />
       </div>
 
-      {/* Split Screen Layout */}
-      <div className="w-full lg:grid lg:grid-cols-2 lg:min-h-screen relative z-10">
-        {/* Left: Content Side */}
-        <div className="relative flex items-center px-6 md:px-12 lg:px-16 py-20 lg:py-0">
-          <div className="max-w-2xl mx-auto lg:mx-0 space-y-8 lg:space-y-10">
+      {/* Hero Content Container */}
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20">
+          
+          {/* Left: Content */}
+          <div className="space-y-8 animate-fade-in-up">
             {/* Badge */}
-            <div className="inline-flex items-center gap-3 px-5 py-3 bg-white/90 backdrop-blur-sm border-2 border-primary/30 rounded-full shadow-soft animate-fade-in">
-              <Sparkles className="w-4 h-4 text-secondary animate-pulse" />
-              <span className="text-sm font-bold text-foreground tracking-wide">Limited to 12 Amazing People!</span>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-secondary/20 to-primary/20 backdrop-blur-sm border-2 border-primary/30 rounded-full shadow-soft">
+              <Sparkles className="w-5 h-5 text-secondary animate-pulse" />
+              <span className="text-sm font-bold text-foreground tracking-wide">✨ Limited to 12 Amazing Souls</span>
             </div>
 
-            {/* Main Headline */}
-            <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display text-foreground leading-[0.95] tracking-tight">
-                TROPICAL
-                <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-3">EDGE</span>
+            {/* Main Headline - More Playful */}
+            <div className="space-y-4">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-display leading-[0.9] tracking-tight">
+                <span className="block text-primary animate-fade-in">TROPICAL</span>
+                <span className="block bg-gradient-to-r from-secondary via-accent to-secondary bg-clip-text text-transparent animate-fade-in" style={{ animationDelay: '0.1s', backgroundSize: '200%' }}>
+                  EDGE
+                </span>
+                <span className="block text-foreground text-3xl md:text-4xl font-serif font-medium mt-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                  Malaysia 🌴
+                </span>
               </h1>
-              <div className="flex items-center gap-4">
-                <div className="h-1 w-20 bg-gradient-to-r from-secondary via-primary to-accent rounded-full" />
-                <p className="text-2xl md:text-3xl font-serif font-medium text-primary">Malaysia</p>
+              <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                <div className="h-2 w-24 bg-gradient-to-r from-secondary via-primary to-accent rounded-full" />
+                <Sun className="w-8 h-8 text-secondary animate-bounce-slow" />
               </div>
             </div>
 
-            {/* Description */}
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Where ancient healing wisdom meets the vibrant beauty of Malaysia's tropical coastline! 
-              <span className="block mt-4 text-foreground font-semibold text-xl">Five amazing days that transform a lifetime ✨</span>
+            {/* Description - More Engaging */}
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed font-medium max-w-xl animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              Where ancient healing wisdom meets Malaysia's vibrant tropical magic! ✨
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              Five transformative days of sun, sea, and soul restoration on Cherating's golden shores.
             </p>
 
-            {/* Key Details */}
-            <div className="grid grid-cols-2 gap-4 pt-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="flex items-start gap-3 p-5 bg-white rounded-3xl border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300">
-                <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Calendar className="w-5 h-5 text-primary" />
+            {/* Key Details Grid - Enhanced */}
+            <div className="grid sm:grid-cols-2 gap-4 pt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <div className="group relative p-6 bg-white rounded-3xl border-2 border-primary/30 shadow-soft hover:shadow-medium hover:scale-105 transition-all duration-300">
+                <div className="absolute -top-3 -right-3 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
+                  <Calendar className="w-6 h-6 text-primary" />
                 </div>
-                <div>
-                  <p className="text-xs text-muted-foreground font-semibold uppercase tracking-wider mb-1">Dates</p>
-                  <p className="text-base font-bold text-foreground">Jan 23–27, 2026</p>
-                </div>
+                <p className="text-xs text-muted-foreground font-bold uppercase tracking-wider mb-2">When</p>
+                <p className="text-xl font-bold text-foreground">Jan 23–27</p>
+                <p className="text-sm text-muted-foreground mt-1">2026</p>
               </div>
-              <div className="flex items-start gap-3 p-5 bg-white rounded-3xl border-2 border-accent/20 shadow-soft hover:shadow-medium transition-all duration-300">
-                <div className="w-10 h-10 rounded-2xl bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-accent" />
+              
+              <div className="group relative p-6 bg-white rounded-3xl border-2 border-accent/30 shadow-soft hover:shadow-medium hover:scale-105 transition-all duration-300">
+                <div className="absolute -top-3 -right-3 w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
+                  <MapPin className="w-6 h-6 text-accent" />
                 </div>
-                <div>
-                  <p className="text-xs text-muted-foreground font-semibold uppercase tracking-wider mb-1">Location</p>
-                  <p className="text-base font-bold text-foreground">Cherating Beach</p>
-                </div>
+                <p className="text-xs text-muted-foreground font-bold uppercase tracking-wider mb-2">Where</p>
+                <p className="text-xl font-bold text-foreground">Cherating</p>
+                <p className="text-sm text-muted-foreground mt-1">Beach Paradise</p>
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            {/* CTA Buttons - More Prominent */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in" style={{ animationDelay: '0.7s' }}>
               <Button 
                 size="lg" 
-                className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg font-bold px-10 py-7 shadow-medium hover:shadow-glow hover:scale-105 transition-all duration-300"
+                className="group relative bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg font-bold px-12 py-8 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden"
               >
-                Reserve Your Journey
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                <span className="relative z-10 flex items-center gap-2">
+                  Reserve Your Spot
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white border-3 border-primary text-primary hover:bg-primary hover:text-white text-lg font-bold px-10 py-7 transition-all duration-300"
+                className="bg-white/80 backdrop-blur-sm border-3 border-primary text-primary hover:bg-primary hover:text-white text-lg font-bold px-12 py-8 hover:scale-105 transition-all duration-300"
               >
-                View Full Experience
+                Explore Details
               </Button>
             </div>
 
-            {/* Early Bird Offer */}
-            <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-secondary/30 via-secondary/20 to-primary/20 border-2 border-secondary/40 rounded-3xl shadow-soft animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <div className="w-10 h-10 rounded-2xl bg-secondary/20 flex items-center justify-center">
-                <Award className="w-6 h-6 text-secondary" />
+            {/* Early Bird - More Eye-catching */}
+            <div className="relative inline-flex items-center gap-4 px-8 py-5 bg-gradient-to-r from-secondary/30 via-accent/20 to-primary/30 border-3 border-secondary/50 rounded-full shadow-medium animate-fade-in" style={{ animationDelay: '0.8s' }}>
+              <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center animate-bounce-slow">
+                <Award className="w-7 h-7 text-secondary" />
               </div>
-              <p className="text-base text-foreground font-medium">
-                <span className="font-bold text-secondary text-lg">Save 20%</span> — Early bird ends July 31st, 2025
-              </p>
+              <div>
+                <p className="text-lg font-bold text-secondary">Save 20% Early Bird!</p>
+                <p className="text-sm text-foreground font-medium">Offer ends July 31st, 2025</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right: Image Side */}
-        <div className="relative min-h-[500px] lg:min-h-screen">
-          {/* Main Image */}
-          <div className="absolute inset-0 rounded-tl-[4rem] lg:rounded-tl-[6rem] overflow-hidden shadow-strong">
-            <img 
-              src={heroImage} 
-              alt="Vibrant cartoon illustration of beach yoga retreat in tropical Malaysia paradise" 
-              className="w-full h-full object-cover"
-            />
-            {/* Subtle Overlay for mobile readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent lg:hidden" />
-          </div>
-
-          {/* Floating Info Card */}
-          <div className="absolute bottom-10 right-10 bg-white/95 backdrop-blur-xl p-8 rounded-3xl border-2 border-primary/30 shadow-strong max-w-xs animate-scale-in hidden lg:block">
-            <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="w-5 h-5 text-secondary" />
-              <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest">Investment</p>
+          {/* Right: Image with Floating Cards */}
+          <div className="relative h-[600px] lg:h-[700px] animate-scale-in" style={{ animationDelay: '0.3s' }}>
+            {/* Main Image Card */}
+            <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-strong border-4 border-white">
+              <img 
+                src={heroImage} 
+                alt="Vibrant cartoon illustration of beach yoga retreat in tropical Malaysia paradise" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />
             </div>
-            <p className="text-4xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3">From $1,850</p>
-            <p className="text-base text-foreground font-semibold mb-4">All-inclusive transformative retreat</p>
-            <div className="pt-4 border-t-2 border-primary/20">
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Includes accommodation, all meals, activities & healing sessions ✨
-              </p>
+
+            {/* Floating Price Card */}
+            <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-xl p-6 rounded-3xl border-3 border-primary/40 shadow-strong max-w-[280px] animate-fade-in" style={{ animationDelay: '0.9s' }}>
+              <div className="flex items-center gap-2 mb-3">
+                <Sparkles className="w-5 h-5 text-secondary animate-pulse" />
+                <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest">Investment</p>
+              </div>
+              <p className="text-5xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">$1,850</p>
+              <p className="text-sm text-foreground font-semibold mb-3">All-inclusive retreat</p>
+              <div className="pt-3 border-t-2 border-primary/20">
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  ✨ Accommodation, meals, activities & healing sessions
+                </p>
+              </div>
+            </div>
+
+            {/* Floating Badge */}
+            <div className="absolute -top-4 -right-4 bg-secondary text-white px-6 py-3 rounded-full shadow-medium rotate-12 animate-bounce-slow">
+              <p className="text-sm font-bold">5 Days</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Decorative Wave Element */}
-      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-secondary via-primary to-accent" />
+      {/* Bottom Decorative Wave */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <div className="h-3 bg-gradient-to-r from-secondary via-primary to-accent" />
+        <Waves className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 text-primary/5" />
+      </div>
     </section>
   );
 };
