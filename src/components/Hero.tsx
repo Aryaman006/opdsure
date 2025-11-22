@@ -4,9 +4,19 @@ import heroImage from "@/assets/hero-cartoon-beach.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Backdrop Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroImage} 
+          alt="Tropical beach paradise backdrop" 
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/85" />
+      </div>
+
       {/* Dynamic Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-20 left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-float" />
         <div className="absolute top-60 right-32 w-56 h-56 bg-secondary/15 rounded-full blur-3xl animate-bounce-slow" style={{ animationDelay: '0.3s' }} />
         <div className="absolute bottom-40 left-1/3 w-48 h-48 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '0.7s' }} />
