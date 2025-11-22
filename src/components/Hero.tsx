@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Award, ArrowRight, Waves, Sparkles, Sun } from "lucide-react";
-import heroImage from "@/assets/hero-beach-yoga.jpg";
+import heroImage from "@/assets/hero-cartoon-beach.jpg";
 
 export const Hero = () => {
   return (
@@ -98,15 +98,14 @@ export const Hero = () => {
         {/* Right: Image Side */}
         <div className="relative min-h-[500px] lg:min-h-screen">
           {/* Main Image */}
-          <div className="absolute inset-0 rounded-tl-[4rem] overflow-hidden">
+          <div className="absolute inset-0 rounded-tl-[4rem] lg:rounded-tl-[6rem] overflow-hidden shadow-strong">
             <img 
               src={heroImage} 
-              alt="Serene beach yoga at sunset in tropical Malaysia" 
+              alt="Vibrant cartoon illustration of beach yoga retreat in tropical Malaysia paradise" 
               className="w-full h-full object-cover"
             />
-            {/* Colorful Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 lg:bg-none" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+            {/* Subtle Overlay for mobile readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent lg:hidden" />
           </div>
 
           {/* Floating Info Card */}
