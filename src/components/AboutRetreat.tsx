@@ -1,95 +1,100 @@
-import { Waves, Mountain, Heart, Zap } from "lucide-react";
+import { Sparkles, Heart, Users, Mountain, Waves, Sun } from "lucide-react";
 import tropicalImage from "@/assets/tropical-paradise.jpg";
 
 export const AboutRetreat = () => {
-  const features = [
-    {
-      icon: Waves,
-      title: "Ocean & Rainforest",
-      description: "Where crystal waters meet ancient jungle. Experience the duality of beach tranquility and rainforest adventure in perfect harmony."
-    },
-    {
-      icon: Mountain,
-      title: "Adventure Awakening",
-      description: "Challenge your edges with rock climbing, flying trapeze, and water sports. Growth lives outside comfort zones."
-    },
-    {
-      icon: Heart,
-      title: "Deep Restoration",
-      description: "Sound healing ceremonies, advanced pranayama, and guided meditation create profound inner shifts."
-    },
-    {
-      icon: Zap,
-      title: "Expert Guidance",
-      description: "Led by 600+ hour certified instructor Bhavika, integrating yoga therapy and clinical nutrition wisdom."
-    }
-  ];
-
   return (
-    <section className="relative py-24 lg:py-32 bg-background overflow-hidden">
-      {/* Subtle background accent */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent" />
-      
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-20 space-y-6">
-          <div className="inline-block px-4 py-2 bg-card border border-primary/20 rounded-full">
-            <span className="text-xs font-semibold text-primary uppercase tracking-widest">The Journey</span>
+    <section className="relative py-24 md:py-32 bg-gradient-to-br from-background via-accent/5 to-secondary/10 overflow-hidden">
+      {/* Playful Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-32 left-20 w-48 h-48 bg-secondary/10 rounded-full blur-3xl animate-bounce-slow" />
+        <Waves className="absolute top-1/3 left-10 w-24 h-24 text-primary/5 animate-wiggle" />
+      </div>
+
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        {/* Header Section */}
+        <div className="max-w-4xl mb-16 md:mb-24 animate-fade-in-up">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-20 h-1.5 bg-gradient-to-r from-secondary via-primary to-accent rounded-full" />
+            <span className="text-sm font-bold text-primary uppercase tracking-wider">The Experience</span>
           </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-foreground leading-tight">
-            More Than a Retreat.
-            <span className="block text-primary mt-3">A Transformation.</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground mb-8 leading-tight">
+            A Journey Beyond
+            <span className="block bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent mt-3">the Ordinary</span>
           </h2>
-          
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            This is where the South China Sea becomes your meditation hall, and the rainforest canopy your cathedral of growth.
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl font-medium">
+            This isn't just another yoga retreat. It's a carefully crafted experience that weaves together ancient wisdom, modern healing practices, and the vibrant beauty of Malaysia's coast! 🌴
           </p>
         </div>
 
-        {/* Main Image with overlay text */}
-        <div className="relative mb-20 group">
-          <div className="rounded-3xl overflow-hidden shadow-strong">
+        {/* Main Content with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+          {/* Image with Quote Overlay */}
+          <div className="relative rounded-[3rem] overflow-hidden shadow-strong animate-scale-in order-2 lg:order-1 border-4 border-white">
             <img 
               src={tropicalImage} 
-              alt="Lush tropical paradise setting" 
-              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+              alt="Tropical paradise beach setting in Malaysia" 
+              className="w-full h-[500px] object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-medium border-2 border-primary/30">
+                <Sun className="w-10 h-10 text-secondary mb-4" />
+                <blockquote className="space-y-4">
+                  <p className="text-xl md:text-2xl font-serif font-semibold text-foreground leading-relaxed">
+                    "In the stillness between waves, we find the rhythm of our truest selves."
+                  </p>
+                  <footer className="text-sm text-muted-foreground font-bold">— Ancient Malay Wisdom</footer>
+                </blockquote>
+              </div>
+            </div>
           </div>
-          
-          {/* Overlay quote */}
-          <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12">
-            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-foreground leading-tight max-w-3xl">
-              "The cure for anything is salt water: sweat, tears, or the sea."
-              <footer className="text-base md:text-lg text-muted-foreground mt-3 not-italic">— Isak Dinesen</footer>
-            </blockquote>
-          </div>
-        </div>
 
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
+          {/* Feature Cards */}
+          <div className="space-y-6 animate-fade-in-up order-1 lg:order-2">
+            {[
+              {
+                icon: Sparkles,
+                color: "primary",
+                title: "Holistic Transformation",
+                description: "A carefully curated blend of yoga, meditation, breathwork, and energy healing designed to rejuvenate body, mind, and spirit! ✨"
+              },
+              {
+                icon: Heart,
+                color: "secondary",
+                title: "Intimate Connection",
+                description: "With only 12 participants, you'll experience genuine connection and personalized attention in a close-knit, supportive community. 💕"
+              },
+              {
+                icon: Users,
+                color: "accent",
+                title: "Expert Guidance",
+                description: "Learn from seasoned practitioners who bring decades of combined experience in yoga, healing modalities, and transformational work. 🙏"
+              },
+              {
+                icon: Mountain,
+                color: "primary",
+                title: "Natural Beauty",
+                description: "Practice on pristine beaches, surrounded by lush tropical forests and the soothing sounds of the ocean—nature as your sanctuary. 🏝️"
+              }
+            ].map((feature, index) => (
               <div 
                 key={index}
-                className="group relative bg-card p-8 rounded-2xl border border-border hover:border-primary/40 transition-all duration-500 hover:-translate-y-1 shadow-soft hover:shadow-medium"
+                className="group flex gap-5 p-6 bg-white rounded-3xl border-2 border-border hover:border-primary/40 transition-all duration-300 hover:shadow-medium hover:scale-105"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative z-10 space-y-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                    <Icon className="w-6 h-6 text-primary" />
+                <div className="flex-shrink-0">
+                  <div className={`w-14 h-14 rounded-2xl bg-${feature.color}/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <feature.icon className={`w-7 h-7 text-${feature.color}`} />
                   </div>
-                  
-                  <h3 className="text-xl font-display font-semibold text-foreground">{feature.title}</h3>
-                  
-                  <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-bold text-foreground mb-2">{feature.title}</h3>
+                  <p className="text-base text-muted-foreground leading-relaxed font-medium">{feature.description}</p>
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>
