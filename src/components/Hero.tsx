@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Award, ArrowRight, Waves, Sparkles, Sun } from "lucide-react";
 import heroImage from "@/assets/meditation-beach-real.jpg";
+import opdsureLogo from "@/assets/opdsure-logo.png";
 
 export const Hero = () => {
   return (
@@ -26,6 +27,18 @@ export const Hero = () => {
 
       {/* Hero Content Container */}
       <div className="container mx-auto px-6 relative z-10">
+        {/* Health Partner Logo - Top */}
+        <div className="absolute top-6 right-6 animate-fade-in">
+          <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-soft border-2 border-primary/20 hover:shadow-medium transition-all duration-300">
+            <p className="text-xs text-muted-foreground font-semibold mb-2 text-center">Health Partner</p>
+            <img 
+              src={opdsureLogo} 
+              alt="OPDsure - Assured Health Partner" 
+              className="h-8 md:h-10 object-contain"
+            />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20">
           
           {/* Left: Content */}
