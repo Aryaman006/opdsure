@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             {/* Brand */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Playyoga</h3>
+              <h3 className="text-2xl font-bold">Playoga</h3>
               <p className="text-primary-foreground/80 leading-relaxed">
                 Curating soulful, movement-led wellness experiences that 
                 transform lives and reconnect you with your authentic self.
@@ -19,9 +19,9 @@ export const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
               <div className="space-y-3">
-                <a href="mailto:retreat@playyoga.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="mailto:retreat@playoga.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   <Mail className="w-5 h-5" />
-                  <span>retreat@playyoga.com</span>
+                  <span>retreat@playoga.com</span>
                 </a>
                 <a href="tel:+60123456789" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   <Phone className="w-5 h-5" />
@@ -52,7 +52,7 @@ export const Footer = () => {
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-            <p>&copy; 2025 Playyoga Wellness. All rights reserved.</p>
+            <p>&copy; 2025 Playoga Wellness. All rights reserved.</p>
           </div>
         </div>
       </div>

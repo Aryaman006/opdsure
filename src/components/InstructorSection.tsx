@@ -1,5 +1,5 @@
 import { Award, Heart, Sparkles } from "lucide-react";
-import instructorImage from "@/assets/instructor-portrait.jpg";
+import instructorImage from "@/assets/indoor-yoga-pose.jpg";
 
 export const InstructorSection = () => {
   const credentials = [
@@ -35,7 +35,7 @@ export const InstructorSection = () => {
                     Ms Bhavika Choradia
                   </h3>
                   <p className="text-primary-foreground/90 mt-2">
-                    Founder of Playyoga Wellness
+                    Founder of Playoga Wellness
                   </p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ export const InstructorSection = () => {
             <div className="space-y-8 animate-fade-in-up">
               <p className="text-lg text-foreground leading-relaxed">
                 Bhavika is a yoga expert, Clinical Nutritionist, retreat facilitator, 
-                and founder of Playyoga — a wellness brand that curates soulful, 
+                and founder of Playoga — a wellness brand that curates soulful, 
                 movement-led experiences.
               </p>
 
