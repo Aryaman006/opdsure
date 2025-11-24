@@ -1,10 +1,23 @@
 import { Mail, Phone, MapPin, Instagram, Facebook, Youtube } from "lucide-react";
+import opdsureLogo from "@/assets/opdsure-logo.png";
 
 export const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          {/* Health Partner Section */}
+          <div className="text-center mb-12 pb-12 border-b border-primary-foreground/20">
+            <p className="text-sm text-primary-foreground/60 mb-6">Health Partner</p>
+            <div className="flex justify-center">
+              <img 
+                src={opdsureLogo} 
+                alt="OPDsure - Assured Health Partner" 
+                className="h-12 md:h-16 object-contain opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             {/* Brand */}
             <div className="space-y-4">
