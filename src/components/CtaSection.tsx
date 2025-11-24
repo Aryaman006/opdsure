@@ -51,9 +51,12 @@ export const CtaSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in-up">
             <Button 
               size="lg" 
+              asChild
               className="bg-secondary hover:bg-secondary/90 text-foreground text-lg px-10 py-6 shadow-strong"
             >
-              Secure Your Spot Today
+              <a href="https://rzp.io/rzp/bkUYcyDH" target="_blank" rel="noopener noreferrer">
+                Secure Your Spot Today
+              </a>
             </Button>
             <Button 
               size="lg" 
@@ -65,7 +68,7 @@ export const CtaSection = () => {
           </div>
 
           <p className="text-sm text-primary-foreground/80 pt-4">
-            Questions? Email us at retreat@playyoga.com or call +60 123-456-789
+            Questions? Email us at retreat@playoga.com or call +60 123-456-789
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Award, ArrowRight, Waves, Sparkles, Sun } from "lucide-react";
-import heroImage from "@/assets/hero-cartoon-beach.jpg";
+import heroImage from "@/assets/meditation-beach-real.jpg";
 
 export const Hero = () => {
   return (
@@ -86,13 +86,16 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in" style={{ animationDelay: '0.7s' }}>
               <Button 
                 size="lg" 
+                asChild
                 className="group relative bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg font-bold px-12 py-8 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden"
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  Reserve Your Spot
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                <a href="https://rzp.io/rzp/bkUYcyDH" target="_blank" rel="noopener noreferrer">
+                  <span className="relative z-10 flex items-center gap-2">
+                    Reserve Your Spot
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                </a>
               </Button>
               <Button 
                 size="lg" 

@@ -1,5 +1,5 @@
 import { Sparkles, Heart, Users, Mountain, Waves, Sun } from "lucide-react";
-import tropicalImage from "@/assets/about-cartoon-retreat.jpg";
+import tropicalImage from "@/assets/beach-yoga-splits.jpg";
 
 export const AboutRetreat = () => {
   return (
@@ -33,7 +33,7 @@ export const AboutRetreat = () => {
           <div className="relative rounded-[3rem] overflow-hidden shadow-strong animate-scale-in order-2 lg:order-1">
             <img 
               src={tropicalImage} 
-              alt="Colorful cartoon illustration of tropical yoga retreat with people practicing by the ocean" 
+              alt="Yoga practitioner performing splits pose on tropical beach at sunset" 
               className="w-full h-[500px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
