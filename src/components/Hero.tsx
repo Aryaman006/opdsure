@@ -28,13 +28,13 @@ export const Hero = () => {
       {/* Hero Content Container */}
       <div className="container mx-auto px-6 relative z-10">
         {/* Health Partner Logo - Top */}
-        <div className="absolute top-6 right-6 animate-fade-in">
-          <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-soft border-2 border-primary/20 hover:shadow-medium transition-all duration-300">
-            <p className="text-xs text-muted-foreground font-semibold mb-2 text-center">Health Partner</p>
+        <div className="absolute top-6 right-6 animate-fade-in z-20">
+          <div className="bg-white backdrop-blur-sm px-8 py-4 rounded-2xl shadow-strong border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
+            <p className="text-sm text-primary font-bold mb-3 text-center tracking-wide">HEALTH PARTNER</p>
             <img 
               src={opdsureLogo} 
               alt="OPDsure - Assured Health Partner" 
-              className="h-8 md:h-10 object-contain"
+              className="h-12 md:h-16 object-contain"
             />
           </div>
         </div>
