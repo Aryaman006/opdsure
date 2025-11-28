@@ -139,16 +139,16 @@ export const Hero = () => {
 
             {/* Floating Price Card - Conversion Optimized */}
             <div
-              className="absolute -bottom-6 -left-6 bg-white/98 backdrop-blur-xl p-7 rounded-3xl border-4 border-secondary/60 shadow-strong max-w-[300px] animate-fade-in hover:scale-105 transition-transform"
+              className="absolute -bottom-6 -left-6 bg-white p-7 rounded-3xl border-4 border-primary shadow-strong max-w-[300px] animate-fade-in hover:scale-105 transition-transform"
               style={{ animationDelay: "0.9s" }}
             >
               <div className="flex items-center gap-2 mb-3">
-                <div className="px-3 py-1 bg-secondary/20 rounded-full">
-                  <p className="text-xs text-secondary font-black uppercase tracking-widest">Early Bird</p>
+                <div className="px-3 py-1 bg-primary rounded-full">
+                  <p className="text-xs text-white font-black uppercase tracking-widest">Early Bird</p>
                 </div>
               </div>
               <div className="flex items-baseline gap-2 mb-2">
-                <p className="text-5xl font-display font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <p className="text-5xl font-display font-black text-primary">
                   $1,850
                 </p>
                 <p className="text-lg text-muted-foreground line-through">$2,050</p>
