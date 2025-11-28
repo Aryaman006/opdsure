@@ -40,105 +40,87 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20">
           {/* Left: Content */}
           <div className="space-y-8 animate-fade-in-up">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-secondary/20 to-primary/20 backdrop-blur-sm border-2 border-primary/30 rounded-full shadow-soft">
-              <Sparkles className="w-5 h-5 text-secondary animate-pulse" />
-              <span className="text-sm font-bold text-foreground tracking-wide">✨ Limited to 12 Amazing Souls</span>
+            {/* Urgency Badge */}
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-secondary via-accent to-secondary backdrop-blur-sm border-2 border-secondary shadow-glow rounded-full animate-pulse">
+              <Sparkles className="w-5 h-5 text-white animate-pulse" />
+              <span className="text-sm font-extrabold text-white tracking-wide">🔥 ONLY 12 SPOTS AVAILABLE</span>
             </div>
 
-            {/* Main Headline - More Playful */}
-            <div className="space-y-4">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-display leading-[0.9] tracking-tight">
-                <span className="block text-primary animate-fade-in">TROPICAL</span>
+            {/* Main Headline - Sharp & Clear */}
+            <div className="space-y-3">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display leading-[1.05] tracking-tight">
+                <span className="block text-primary animate-fade-in font-black">Tropical Edge:</span>
                 <span
-                  className="block bg-gradient-to-r from-secondary via-accent to-secondary bg-clip-text text-transparent animate-fade-in"
-                  style={{ animationDelay: "0.1s", backgroundSize: "200%" }}
+                  className="block text-foreground animate-fade-in mt-2"
+                  style={{ animationDelay: "0.1s" }}
                 >
-                  EDGE
+                  Malaysia Wellness &
                 </span>
                 <span
-                  className="block text-foreground text-3xl md:text-4xl font-serif font-medium mt-4 animate-fade-in"
-                  style={{ animationDelay: "0.2s" }}
+                  className="block bg-gradient-to-r from-secondary via-accent to-secondary bg-clip-text text-transparent animate-fade-in font-black"
+                  style={{ animationDelay: "0.15s", backgroundSize: "200%" }}
                 >
-                  Malaysia 🌴
+                  Adventure Retreat
                 </span>
               </h1>
-              <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                <div className="h-2 w-24 bg-gradient-to-r from-secondary via-primary to-accent rounded-full" />
-                <Sun className="w-8 h-8 text-secondary animate-bounce-slow" />
+            </div>
+
+            {/* Key Info Upfront - Dates & Location */}
+            <div className="space-y-3 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+              <div className="flex items-center gap-3 text-lg md:text-xl font-bold text-foreground">
+                <Calendar className="w-6 h-6 text-primary flex-shrink-0" />
+                <span>January 23–27, 2026 (5 Days / 4 Nights)</span>
+              </div>
+              <div className="flex items-center gap-3 text-lg md:text-xl font-bold text-foreground">
+                <MapPin className="w-6 h-6 text-accent flex-shrink-0" />
+                <span>Cherating Beach, Pahang, Malaysia</span>
               </div>
             </div>
 
-            {/* Description - More Engaging */}
+            {/* Value Proposition */}
             <p
-              className="text-xl md:text-2xl text-foreground leading-relaxed font-medium max-w-xl animate-fade-in"
+              className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl animate-fade-in font-medium"
               style={{ animationDelay: "0.4s" }}
             >
-              Where ancient healing wisdom meets Malaysia's vibrant tropical magic! ✨
-            </p>
-            <p
-              className="text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in"
-              style={{ animationDelay: "0.5s" }}
-            >
-              Five transformative days of sun, sea, and soul restoration on Cherating's golden shores.
+              Yoga • Healing • Adventure • Nature. Transform stress into vitality with sunrise yoga, sound healing, water sports & jungle exploration.
             </p>
 
-            {/* Key Details Grid - Enhanced */}
-            <div className="grid sm:grid-cols-2 gap-4 pt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              <div className="group relative p-6 bg-white rounded-3xl border-2 border-primary/30 shadow-soft hover:shadow-medium hover:scale-105 transition-all duration-300">
-                <div className="absolute -top-3 -right-3 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
-                  <Calendar className="w-6 h-6 text-primary" />
-                </div>
-                <p className="text-xs text-muted-foreground font-bold uppercase tracking-wider mb-2">When</p>
-                <p className="text-xl font-bold text-foreground">Jan 23–27</p>
-                <p className="text-sm text-muted-foreground mt-1">2026</p>
-              </div>
-
-              <div className="group relative p-6 bg-white rounded-3xl border-2 border-accent/30 shadow-soft hover:shadow-medium hover:scale-105 transition-all duration-300">
-                <div className="absolute -top-3 -right-3 w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
-                  <MapPin className="w-6 h-6 text-accent" />
-                </div>
-                <p className="text-xs text-muted-foreground font-bold uppercase tracking-wider mb-2">Where</p>
-                <p className="text-xl font-bold text-foreground">Cherating</p>
-                <p className="text-sm text-muted-foreground mt-1">Beach Paradise</p>
-              </div>
-            </div>
-
-            {/* CTA Buttons - More Prominent */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in" style={{ animationDelay: "0.7s" }}>
+            {/* Strong Primary CTA */}
+            <div className="space-y-4 pt-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <Button
                 size="lg"
                 asChild
-                className="group relative bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg font-bold px-12 py-8 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden"
+                className="group relative w-full sm:w-auto bg-gradient-to-r from-primary via-accent to-primary hover:from-primary/90 hover:via-accent/90 hover:to-primary/90 text-white text-xl font-extrabold px-16 py-10 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden border-3 border-white/20"
               >
                 <a href="https://rzp.io/rzp/bkUYcyDH" target="_blank" rel="noopener noreferrer">
-                  <span className="relative z-10 flex items-center gap-2">
-                    Reserve Your Spot
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span className="relative z-10 flex items-center gap-3">
+                    Book Your Spot Now
+                    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
               </Button>
+              
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white/80 backdrop-blur-sm border-3 border-primary text-primary hover:bg-primary hover:text-white text-lg font-bold px-12 py-8 hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto bg-white border-2 border-primary/50 text-primary hover:bg-primary/5 text-base font-bold px-10 py-6"
               >
-                Explore Details
+                Download Full Itinerary (PDF)
               </Button>
             </div>
 
-            {/* Early Bird - More Eye-catching */}
+            {/* Urgent Early Bird Offer */}
             <div
-              className="relative inline-flex items-center gap-4 px-8 py-5 bg-gradient-to-r from-secondary/30 via-accent/20 to-primary/30 border-3 border-secondary/50 rounded-full shadow-medium animate-fade-in"
-              style={{ animationDelay: "0.8s" }}
+              className="relative inline-flex items-start gap-4 px-8 py-6 bg-gradient-to-br from-secondary via-secondary/90 to-accent border-3 border-white/50 rounded-2xl shadow-strong animate-fade-in"
+              style={{ animationDelay: "0.6s" }}
             >
-              <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center animate-bounce-slow">
-                <Award className="w-7 h-7 text-secondary" />
+              <div className="w-14 h-14 rounded-full bg-white/30 flex items-center justify-center animate-bounce-slow flex-shrink-0">
+                <Award className="w-8 h-8 text-white" />
               </div>
               <div>
-                <p className="text-lg font-bold text-secondary">Save 20% Early Bird!</p>
-                <p className="text-sm text-foreground font-medium">Offer ends July 31st, 2025</p>
+                <p className="text-xl font-black text-white mb-1">🎯 Early Bird: Save USD 200!</p>
+                <p className="text-base text-white/90 font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
               </div>
             </div>
           </div>
@@ -155,22 +137,35 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />
             </div>
 
-            {/* Floating Price Card */}
+            {/* Floating Price Card - Conversion Optimized */}
             <div
-              className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-xl p-6 rounded-3xl border-3 border-primary/40 shadow-strong max-w-[280px] animate-fade-in"
+              className="absolute -bottom-6 -left-6 bg-white/98 backdrop-blur-xl p-7 rounded-3xl border-4 border-secondary/60 shadow-strong max-w-[300px] animate-fade-in hover:scale-105 transition-transform"
               style={{ animationDelay: "0.9s" }}
             >
               <div className="flex items-center gap-2 mb-3">
-                <Sparkles className="w-5 h-5 text-secondary animate-pulse" />
-                <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest">Investment</p>
+                <div className="px-3 py-1 bg-secondary/20 rounded-full">
+                  <p className="text-xs text-secondary font-black uppercase tracking-widest">Early Bird</p>
+                </div>
               </div>
-              <p className="text-5xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
-                $1,850
-              </p>
-              <p className="text-sm text-foreground font-semibold mb-3">All-inclusive retreat</p>
-              <div className="pt-3 border-t-2 border-primary/20">
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  ✨ Accommodation, meals, activities & healing sessions
+              <div className="flex items-baseline gap-2 mb-2">
+                <p className="text-5xl font-display font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  $1,850
+                </p>
+                <p className="text-lg text-muted-foreground line-through">$2,050</p>
+              </div>
+              <p className="text-sm text-foreground font-bold mb-4">All-inclusive twin sharing</p>
+              <div className="pt-3 border-t-2 border-primary/20 space-y-1">
+                <p className="text-xs text-foreground font-semibold flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  Accommodation & meals
+                </p>
+                <p className="text-xs text-foreground font-semibold flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  All yoga & healing sessions
+                </p>
+                <p className="text-xs text-foreground font-semibold flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  Adventure activities included
                 </p>
               </div>
             </div>
