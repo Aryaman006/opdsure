@@ -1,28 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, Info } from "lucide-react";
 
 export const PricingSection = () => {
   const packages = [
     {
-      type: "Standard Room",
-      earlyBird: "$1,299",
-      regular: "$1,599",
-      features: ["Twin Sharing Basis", "Garden View", "Air Conditioning", "Private Bathroom"],
-      popular: false
-    },
-    {
-      type: "Deluxe Room",
-      earlyBird: "$1,599",
-      regular: "$1,999",
-      features: ["Twin Sharing Basis", "Ocean View", "Balcony Access", "Premium Amenities"],
+      type: "Twin Sharing",
+      earlyBird: "$1,850",
+      regular: "$2,050",
+      features: [
+        "4 Nights Luxury Accommodation",
+        "All Meals & Snacks Included",
+        "All Yoga & Healing Sessions",
+        "All Adventure Activities",
+        "Airport Transfers Included"
+      ],
       popular: true
     },
     {
-      type: "Private Suite",
-      earlyBird: "$2,199",
-      regular: "$2,699",
-      features: ["Single Occupancy", "Panoramic Views", "Private Terrace", "Luxury Experience"],
+      type: "Single Occupancy",
+      earlyBird: "$2,450",
+      regular: "$2,650",
+      features: [
+        "Private Room for Solo Travelers",
+        "All Meals & Snacks Included",
+        "All Yoga & Healing Sessions",
+        "All Adventure Activities",
+        "Airport Transfers Included"
+      ],
       popular: false
     }
   ];
@@ -47,7 +52,7 @@ export const PricingSection = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {packages.map((pkg, index) => (
               <div 
                 key={index}
@@ -111,11 +116,56 @@ export const PricingSection = () => {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <p className="text-muted-foreground">
-              * Prices are per person and exclude international flights. 
-              Payment plans available upon request.
-            </p>
+          {/* Booking Conditions */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-muted/50 border-2 border-primary/20 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Info className="w-6 h-6 text-primary" />
+                <h3 className="text-2xl font-bold text-foreground">Booking Conditions</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Deposit:</strong> USD $499 non-refundable to secure your spot
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Balance Due:</strong> 30 days before retreat starts
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Early Bird:</strong> Book before July 31st, 2025 to save $200
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Transfers:</strong> Can transfer to another person up to 14 days before
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Cancellation:</strong> Deposit non-refundable, balance refundable per policy
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-foreground">
+                      <strong>Payment Plans:</strong> Available upon request
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

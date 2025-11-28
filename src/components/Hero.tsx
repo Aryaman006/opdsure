@@ -104,9 +104,12 @@ export const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
+                asChild
                 className="w-full sm:w-auto bg-white border-2 border-primary/50 text-primary hover:bg-primary/5 text-base font-bold px-10 py-6"
               >
-                Download Full Itinerary (PDF)
+                <a href="/logo.pdf" download="Tropical-Edge-Malaysia-Retreat-Itinerary.pdf">
+                  Download Full Itinerary (PDF)
+                </a>
               </Button>
             </div>
 
