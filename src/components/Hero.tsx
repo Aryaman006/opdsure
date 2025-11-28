@@ -112,15 +112,15 @@ export const Hero = () => {
 
             {/* Urgent Early Bird Offer */}
             <div
-              className="relative inline-flex items-start gap-4 px-8 py-6 bg-gradient-to-br from-secondary via-secondary/90 to-accent border-3 border-white/50 rounded-2xl shadow-strong animate-fade-in"
+              className="relative inline-flex items-start gap-4 px-8 py-6 bg-white border-4 border-primary rounded-2xl shadow-strong animate-fade-in hover:scale-105 transition-transform"
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="w-14 h-14 rounded-full bg-white/30 flex items-center justify-center animate-bounce-slow flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center animate-bounce-slow flex-shrink-0">
                 <Award className="w-8 h-8 text-white" />
               </div>
               <div>
-                <p className="text-xl font-black text-white mb-1">🎯 Early Bird: Save USD 200!</p>
-                <p className="text-base text-white/90 font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
+                <p className="text-xl font-black text-primary mb-1">🎯 Early Bird: Save USD 200!</p>
+                <p className="text-base text-foreground font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
               </div>
             </div>
           </div>
