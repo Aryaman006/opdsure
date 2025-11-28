@@ -2,12 +2,14 @@ import { Hero } from "@/components/Hero";
 import { WhyThisRetreat } from "@/components/WhyThisRetreat";
 import { ExperienceHighlights } from "@/components/ExperienceHighlights";
 import { ItinerarySnapshot } from "@/components/ItinerarySnapshot";
-import { AboutRetreat } from "@/components/AboutRetreat";
 import { InclusionsSection } from "@/components/InclusionsSection";
 import { InstructorSection } from "@/components/InstructorSection";
 import { PricingSection } from "@/components/PricingSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { LogisticsSection } from "@/components/LogisticsSection";
+import { FaqSection } from "@/components/FaqSection";
 import { CtaSection } from "@/components/CtaSection";
+import { StickyCtaButton } from "@/components/StickyCtaButton";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -17,12 +19,14 @@ const Index = () => {
       <WhyThisRetreat />
       <ExperienceHighlights />
       <ItinerarySnapshot />
-      <AboutRetreat />
       <InclusionsSection />
       <InstructorSection />
       <PricingSection />
       <TestimonialsSection />
+      <LogisticsSection />
+      <FaqSection />
       <CtaSection />
+      <StickyCtaButton />
       <Footer />
     </div>
   );

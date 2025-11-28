@@ -60,10 +60,13 @@ export const CtaSection = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
+              variant="outline"
+              asChild
               className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-lg px-10 py-6"
             >
-              Download Brochure
+              <a href="/logo.pdf" download="Tropical-Edge-Malaysia-Retreat-Brochure.pdf">
+                Download Brochure
+              </a>
             </Button>
           </div>
 
