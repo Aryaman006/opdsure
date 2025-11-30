@@ -30,11 +30,11 @@ export const CtaSection = () => {
 
           {/* Stats */}
           <div className="grid md:grid-cols-3 gap-6 py-8">
-            {[
-              { icon: Calendar, label: "5 Days / 4 Nights", value: "Jan 23-27, 2026" },
-              { icon: Users, label: "Limited to", value: "20 Participants" },
-              { icon: Clock, label: "Early Bird Ends", value: "July 31st" }
-            ].map((stat, index) => (
+          {[
+            { icon: Calendar, label: "5 Days / 4 Nights", value: "Jan 23-27, 2026" },
+            { icon: Users, label: "Limited to", value: "90 Participants" },
+            { icon: Clock, label: "Early Bird Ends", value: "Jan 5th" }
+          ].map((stat, index) => (
               <div 
                 key={index}
                 className="bg-background/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 animate-scale-in"
