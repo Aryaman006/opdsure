@@ -66,7 +66,7 @@ export const ItinerarySnapshot = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-muted/30 to-white">
+    <section className="py-20 px-4 md:px-6 bg-gradient-to-b from-muted/30 to-white">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 rounded-full mb-6">
@@ -81,11 +81,11 @@ export const ItinerarySnapshot = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-12">
           {days.map((dayInfo, index) => (
             <div
               key={index}
-              className={`group relative bg-white p-8 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-strong hover:-translate-y-2 animate-fade-in ${
+              className={`group relative bg-white p-6 md:p-8 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-strong hover:-translate-y-2 animate-fade-in ${
                 index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
