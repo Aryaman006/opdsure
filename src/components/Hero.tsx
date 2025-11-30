@@ -28,7 +28,7 @@ export const Hero = () => {
       </div>
 
       {/* Hero Content Container */}
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Health Partner Logo - Top */}
         <div className="absolute top-4 right-4 md:top-6 md:right-6 animate-fade-in z-20">
           <div className="bg-white backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 rounded-xl md:rounded-2xl shadow-strong border-2 md:border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
@@ -115,15 +115,15 @@ export const Hero = () => {
 
             {/* Urgent Early Bird Offer */}
             <div
-              className="relative inline-flex items-start gap-4 px-8 py-6 bg-white border-4 border-primary rounded-2xl shadow-strong animate-fade-in hover:scale-105 transition-transform"
+              className="relative flex items-start gap-3 md:gap-4 px-4 md:px-8 py-4 md:py-6 bg-white border-3 md:border-4 border-primary rounded-2xl shadow-strong animate-fade-in hover:scale-105 transition-transform w-full md:inline-flex md:w-auto"
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center animate-bounce-slow flex-shrink-0">
-                <Award className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center animate-bounce-slow flex-shrink-0">
+                <Award className="w-6 h-6 md:w-8 md:h-8 text-white" />
               </div>
               <div>
-                <p className="text-xl font-black text-primary mb-1">🎯 Early Bird: Save USD 200!</p>
-                <p className="text-base text-foreground font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
+                <p className="text-base md:text-xl font-black text-primary mb-1">🎯 Early Bird: Save USD 200!</p>
+                <p className="text-sm md:text-base text-foreground font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ export const Hero = () => {
 
             {/* Floating Price Card - Conversion Optimized */}
             <div
-              className="absolute -bottom-6 -left-6 bg-white p-7 rounded-3xl border-4 border-primary shadow-strong max-w-[300px] animate-fade-in hover:scale-105 transition-transform"
+              className="absolute -bottom-6 left-4 right-4 md:left-auto md:right-auto md:-left-6 bg-white p-5 md:p-7 rounded-3xl border-4 border-primary shadow-strong md:max-w-[300px] animate-fade-in hover:scale-105 transition-transform"
               style={{ animationDelay: "0.9s" }}
             >
               <div className="flex items-center gap-2 mb-3">
