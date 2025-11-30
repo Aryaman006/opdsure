@@ -53,7 +53,7 @@ export const ExperienceHighlights = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-4 md:px-6 bg-white">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-display font-black text-primary mb-4">
@@ -64,11 +64,11 @@ export const ExperienceHighlights = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-b from-white to-muted/30 p-8 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-strong hover:-translate-y-2 animate-fade-in"
+              className="group relative bg-gradient-to-b from-white to-muted/30 p-6 md:p-8 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-strong hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Icon with gradient background */}
