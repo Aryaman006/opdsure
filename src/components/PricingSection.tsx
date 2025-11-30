@@ -47,7 +47,7 @@ export const PricingSection = () => {
             <div className="inline-flex items-center gap-2 bg-secondary/20 border-2 border-secondary px-6 py-3 rounded-full">
               <Sparkles className="w-5 h-5 text-secondary" />
               <span className="font-semibold text-foreground">
-                Early Bird Special: Book before July 31st & Save 20%
+                Early Bird Special: Book before Jan 5th & Save 20%
               </span>
             </div>
           </div>
@@ -140,7 +140,7 @@ export const PricingSection = () => {
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <p className="text-foreground">
-                      <strong>Early Bird:</strong> Book before July 31st, 2025 to save $200
+                      <strong>Early Bird:</strong> Book before Jan 5th, 2026 to save $200
                     </p>
                   </div>
                 </div>
