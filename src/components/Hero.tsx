@@ -29,8 +29,8 @@ export const Hero = () => {
 
       {/* Hero Content Container */}
       <div className="container mx-auto px-6 relative z-10">
-        {/* Health Partner Logo - Top */}
-        <div className="absolute top-6 right-6 animate-fade-in z-20">
+        {/* Health Partner Logo - Top (Hidden on mobile to avoid overlap) */}
+        <div className="hidden md:block absolute top-6 right-6 animate-fade-in z-20">
           <div className="bg-white backdrop-blur-sm px-8 py-4 rounded-2xl shadow-strong border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
             <p className="text-sm text-primary font-bold mb-3 text-center tracking-wide">HEALTH PARTNER</p>
             <img src={opdsureLogo} alt="OPDsure - Assured Health Partner" className="h-12 md:h-16 object-contain" />
