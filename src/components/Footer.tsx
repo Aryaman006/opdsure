@@ -36,13 +36,13 @@ export const Footer = () => {
                   <Mail className="w-5 h-5" />
                   <span>retreat@playoga.com</span>
                 </a>
-                <a href="tel:+60123456789" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="tel:+919810113654" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   <Phone className="w-5 h-5" />
-                  <span>+60 123-456-789</span>
+                  <span>+91-9810113654</span>
                 </a>
                 <div className="flex items-start gap-3 text-primary-foreground/80">
                   <MapPin className="w-5 h-5 mt-1" />
-                  <span>Cherating Beach, Pahang, Malaysia</span>
+                  <span>Noida, Uttar Pradesh - 201304</span>
                 </div>
               </div>
             </div>
@@ -64,8 +64,17 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-            <p>&copy; 2025 Playoga Wellness. All rights reserved.</p>
+          <div className="border-t border-primary-foreground/20 pt-8 space-y-4">
+            <div className="text-center text-sm text-primary-foreground/80">
+              <p className="font-semibold mb-2">Finlyt Solutions Pvt. Ltd.</p>
+              <div className="space-y-1 text-primary-foreground/60">
+                <p>GST No. 09AAECF8058N1ZY | COI No. U74999UP2021PTC155131</p>
+                <p>Trade Mark No. 6246892, 6246893 | Certificate No. D1PP103946</p>
+              </div>
+            </div>
+            <p className="text-center text-sm text-primary-foreground/60">
+              &copy; 2025 Playoga Wellness. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
