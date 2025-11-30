@@ -123,7 +123,7 @@ export const Hero = () => {
               </div>
               <div>
                 <p className="text-base md:text-xl font-black text-primary mb-1">🎯 Early Bird: Save USD 200!</p>
-                <p className="text-sm md:text-base text-foreground font-semibold">Offer ends July 31st, 2025 • Limited spots remaining</p>
+                <p className="text-sm md:text-base text-foreground font-semibold">Offer ends Jan 5th, 2025 • Limited spots remaining</p>
               </div>
             </div>
           </div>
