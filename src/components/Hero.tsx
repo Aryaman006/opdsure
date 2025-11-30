@@ -29,21 +29,21 @@ export const Hero = () => {
 
       {/* Hero Content Container */}
       <div className="container mx-auto px-6 relative z-10">
-        {/* Health Partner Logo - Top (Hidden on mobile to avoid overlap) */}
-        <div className="hidden md:block absolute top-6 right-6 animate-fade-in z-20">
-          <div className="bg-white backdrop-blur-sm px-8 py-4 rounded-2xl shadow-strong border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
-            <p className="text-sm text-primary font-bold mb-3 text-center tracking-wide">HEALTH PARTNER</p>
-            <img src={opdsureLogo} alt="OPDsure - Assured Health Partner" className="h-12 md:h-16 object-contain" />
+        {/* Health Partner Logo - Top */}
+        <div className="absolute top-4 right-4 md:top-6 md:right-6 animate-fade-in z-20">
+          <div className="bg-white backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 rounded-xl md:rounded-2xl shadow-strong border-2 md:border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
+            <p className="text-xs md:text-sm text-primary font-bold mb-1 md:mb-3 text-center tracking-wide">HEALTH PARTNER</p>
+            <img src={opdsureLogo} alt="OPDsure - Assured Health Partner" className="h-8 md:h-16 object-contain" />
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20 md:py-20 pt-32">
           {/* Left: Content */}
           <div className="space-y-8 animate-fade-in-up">
             {/* Urgency Badge */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-secondary via-accent to-secondary backdrop-blur-sm border-2 border-secondary shadow-glow rounded-full animate-pulse">
-              <Sparkles className="w-5 h-5 text-white animate-pulse" />
-              <span className="text-sm font-extrabold text-white tracking-wide">🔥 ONLY 12 SPOTS AVAILABLE</span>
+            <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-secondary via-accent to-secondary backdrop-blur-sm border-2 border-secondary shadow-glow rounded-full animate-pulse">
+              <Sparkles className="w-4 md:w-5 h-4 md:h-5 text-white animate-pulse" />
+              <span className="text-xs md:text-sm font-extrabold text-white tracking-wide">🔥 ONLY 12 SPOTS AVAILABLE</span>
             </div>
 
             {/* Main Headline - Sharp & Clear */}
