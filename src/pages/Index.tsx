@@ -11,6 +11,7 @@ import { FaqSection } from "@/components/FaqSection";
 import { CtaSection } from "@/components/CtaSection";
 import { StickyCtaButton } from "@/components/StickyCtaButton";
 import { Footer } from "@/components/Footer";
+import OPDSureContact from "@/components/Footer2";
 
 const Index = () => {
   return (
@@ -27,7 +28,8 @@ const Index = () => {
       <FaqSection />
       <CtaSection />
       <StickyCtaButton />
-      <Footer />
+      {/* <Footer /> */}
+      <OPDSureContact/>
     </div>
   );
 };

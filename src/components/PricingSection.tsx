@@ -6,8 +6,8 @@ export const PricingSection = () => {
   const packages = [
     {
       type: "Twin Sharing",
-      earlyBird: "$1,850",
-      regular: "$2,050",
+      earlyBird: "$1,000",
+      regular: "$1,500",
       features: [
         "4 Nights Luxury Accommodation",
         "All Meals & Snacks Included",

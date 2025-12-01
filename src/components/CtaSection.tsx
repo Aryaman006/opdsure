@@ -33,7 +33,7 @@ export const CtaSection = () => {
           {[
             { icon: Calendar, label: "5 Days / 4 Nights", value: "Jan 23-27, 2026" },
             { icon: Users, label: "Limited to", value: "90 Participants" },
-            { icon: Clock, label: "Early Bird Ends", value: "Jan 5th" }
+            { icon: Clock, label: "Early Bird Ends", value: "Dec 20th" }
           ].map((stat, index) => (
               <div 
                 key={index}
