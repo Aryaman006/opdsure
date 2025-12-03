@@ -40,6 +40,16 @@ const OPDSureFooter: React.FC = () => {
             <li>COI: U74999UP2021PTC155131</li>
             <li>Trademarks: 6246892 / 6246893</li>
             <li>Certificate No: D1PP103946</li>
+
+            {/* ⭐ New Terms Link */}
+            <li className="pt-2">
+              <a 
+                href="/t&c" 
+                className="text-primary-light hover:text-white transition font-medium underline"
+              >
+                Terms & Conditions
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -47,7 +57,6 @@ const OPDSureFooter: React.FC = () => {
         <div>
           <h2 className="text-lg font-semibold text-white mb-4">Download Our App</h2>
           <div className="flex items-center gap-4">
-            {/* Replace with your images */}
             <a href="https://www.apple.com/in/app-store/" target="_blank">
               <img src="/app.png" alt="App Store" className="h-12 md:h-14 rounded-lg shadow-lg hover:opacity-90" />
             </a>

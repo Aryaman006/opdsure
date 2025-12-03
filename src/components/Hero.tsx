@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Award, ArrowRight, Waves, Sparkles, Sun } from "lucide-react";
 import heroImage from "@/assets/meditation-beach-real.jpg";
-import opdsureLogo from "@/assets/opdsure-logo.png";
+// import opdsureLogo from "@/assets/opdsure-logo.png";
 import PayPalModal from "./PayPal";
 
 export const Hero = () => {
@@ -30,12 +30,12 @@ export const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         
         {/* Health Partner Logo */}
-        <div className="absolute top-4 right-4 md:top-6 md:right-6 animate-fade-in z-20">
+        {/* <div className="absolute top-4 right-4 md:top-6 md:right-6 animate-fade-in z-20">
           <div className="bg-white backdrop-blur-sm px-4 py-2 md:px-8 md:py-4 rounded-xl md:rounded-2xl shadow-strong border-2 md:border-3 border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300">
             <p className="text-xs md:text-sm text-primary font-bold mb-1 md:mb-3 text-center tracking-wide">HEALTH PARTNER</p>
             <img src={opdsureLogo} alt="OPDsure - Assured Health Partner" className="h-8 md:h-16 object-contain" />
           </div>
-        </div>
+        </div> */}
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-20 md:py-20 pt-32">
 
@@ -43,39 +43,48 @@ export const Hero = () => {
           <div className="space-y-8 animate-fade-in-up">
 
             {/* Urgency Badge */}
-            <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-secondary via-accent to-secondary backdrop-blur-sm border-2 border-secondary shadow-glow rounded-full animate-pulse">
+            {/* <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-secondary via-accent to-secondary backdrop-blur-sm border-2 border-secondary shadow-glow rounded-full animate-pulse">
               <Sparkles className="w-4 md:w-5 h-4 md:h-5 text-white animate-pulse" />
               <span className="text-xs md:text-sm font-extrabold text-white tracking-wide">🔥 ONLY 12 SPOTS AVAILABLE</span>
-            </div>
+            </div> */}
 
             {/* Main Heading */}
-            <div className="space-y-3">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display leading-[1.05] tracking-tight space-y-3">
+           <div className="space-y-2">
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug tracking-tight">
 
-                {/* Logo */}
-                <span className="block animate-fade-in">
-                  <img
-                    src={opdsureLogo}
-                    alt="OPDsure Logo"
-                    className="
-                      h-20
-                      sm:h-24
-                      md:h-32
-                      lg:h-44
-                      object-contain
-                    "
-                  />
-                </span>
+    {/* Logo */}
+    <span className="block animate-fade-in">
+      <img
+        src="/logo.png"
+        alt="OPDsure Logo"
+        className="
+          h-16
+          sm:h-20
+          md:h-24
+          lg:h-28
+          object-contain
+          mx-auto
+        "
+      />
+    </span>
 
-                <span className="block bg-gradient-to-r from-secondary via-accent to-secondary bg-clip-text text-transparent animate-fade-in font-black" style={{ animationDelay: "0.15s", backgroundSize: '200%' }}>
-                  Present
-                </span>
+    <span 
+      className="block bg-gradient-to-r from-secondary via-accent to-secondary bg-clip-text text-transparent animate-fade-in font-semibold font-serif"
+      style={{ animationDelay: "0.1s", backgroundSize: '200%' }}
+    >
+      Present
+    </span>
 
-                <span className="block text-primary animate-fade-in font-black">
-                  Malaysia Wellness & Adventure 
-                </span>
-              </h1>
-            </div>
+    <span 
+  className="block text-primary font-serif animate-fade-in font-semibold"
+  style={{ animationDelay: "0.2s" }}
+>
+  Malaysia Wellness <span className="font-serif">&amp;</span> Adventure Retreat
+</span>
+
+  </h1>
+</div>
+
 
             {/* Date & Location */}
             <div className="space-y-3 animate-fade-in" style={{ animationDelay: "0.3s" }}>

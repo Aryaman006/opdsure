@@ -17,19 +17,19 @@ export const PricingSection = () => {
       ],
       popular: true
     },
-    {
-      type: "Single Occupancy",
-      earlyBird: "$2,450",
-      regular: "$2,650",
-      features: [
-        "Private Room for Solo Travelers",
-        "All Meals & Snacks Included",
-        "All Yoga & Healing Sessions",
-        "All Adventure Activities",
-        "Airport Transfers Included"
-      ],
-      popular: false
-    }
+    // {
+    //   type: "Single Occupancy",
+    //   earlyBird: "$2,450",
+    //   regular: "$2,650",
+    //   features: [
+    //     "Private Room for Solo Travelers",
+    //     "All Meals & Snacks Included",
+    //     "All Yoga & Healing Sessions",
+    //     "All Adventure Activities",
+    //     "Airport Transfers Included"
+    //   ],
+    //   popular: false
+    // }
   ];
 
   return (
@@ -51,8 +51,8 @@ export const PricingSection = () => {
               </span>
             </div>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div className="grid grid-cols-1 place-items-center max-w-2xl mx-auto">
+          {/* <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"> */}
             {packages.map((pkg, index) => (
               <div 
                 key={index}
@@ -118,55 +118,81 @@ export const PricingSection = () => {
 
           {/* Booking Conditions */}
           <div className="mt-16 max-w-4xl mx-auto">
-            <div className="bg-muted/50 border-2 border-primary/20 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <Info className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">Booking Conditions</h3>
-              </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Deposit:</strong> USD $499 non-refundable to secure your spot
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Balance Due:</strong> 30 days before retreat starts
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Early Bird:</strong> Book before Jan 5th, 2026 to save $200
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Transfers:</strong> Can transfer to another person up to 14 days before
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Cancellation:</strong> Deposit non-refundable, balance refundable per policy
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-foreground">
-                      <strong>Payment Plans:</strong> Available upon request
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="bg-muted/50 border-2 border-primary/20 rounded-2xl p-8">
+    <div className="flex items-center gap-3 mb-6">
+      <Info className="w-6 h-6 text-primary" />
+      <h3 className="text-2xl font-bold text-foreground">Booking Conditions</h3>
+    </div>
+
+    <div className="space-y-6 text-foreground">
+
+      <div>
+        <h4 className="font-semibold mb-2">Booking & Payment Terms</h4>
+        <p>A non-refundable full deposit of $1,000 (₹89,999) is required to secure your spot.</p>
+        <p>Booking is confirmed only after full payment and written confirmation.</p>
+        <p>Early-bird discount is valid until December 20, 2025.</p>
+        <p>All bookings made on or after December 25, 2025, are non-refundable.</p>
+        <p>Failure to complete payment by December 20, 2025, results in automatic cancellation without refund.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Cancellation & Refund Policy</h4>
+        <p>All deposits are strictly non-refundable under any circumstances.</p>
+        <p>No refunds for cancellations after December 25, 2025, no-shows, early departures, missed activities, or travel delays.</p>
+        <p>If you cannot attend, the booking may be transferred to another person until January 5, 2026, with prior written approval.</p>
+        <p>If the retreat is cancelled by the organizer, a 100% refund will be provided. No additional claims will be accepted.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Program & Activity Changes</h4>
+        <p>Activities, workshops, and schedules may change due to weather, safety, instructor availability, or unforeseen circumstances.</p>
+        <p>Snorkelling/water activities depend on tides and weather. Alternate activities may be arranged but are not guaranteed.</p>
+        <p>No refunds for substituted or modified activities.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Health, Safety & Liability</h4>
+        <p>Participants must disclose any medical conditions before the retreat.</p>
+        <p>All yoga, wellness, and adventure activities are voluntary and undertaken at your own risk.</p>
+        <p>Organizers, instructors, and partners are not liable for injuries, illness, accidents, loss, or damages.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Travel Responsibility</h4>
+        <p>Participants are responsible for travel documents, visas, flights, and insurance.</p>
+        <p>No compensation for missed sessions or delays due to travel issues.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Photography & Media Release</h4>
+        <p>Participants may be photographed or recorded during the retreat.</p>
+        <p>Media may be used for promotional purposes.</p>
+        <p>If you do not want to appear in media, submit a written request before the retreat.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Code of Conduct</h4>
+        <p>Respectful behavior is mandatory.</p>
+        <p>Misconduct or illegal substance use results in immediate removal without refund.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Force Majeure</h4>
+        <p>Organizers are not liable for delays or cancellations due to events beyond control (weather, natural disasters, government restrictions, epidemics).</p>
+        <p>Payments may be moved as credit toward a future retreat; refunds are not guaranteed.</p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold mb-2">Legal & Jurisdiction</h4>
+        <p>By booking, participants agree to the Terms & Conditions and accept all risks.</p>
+        <p>Jurisdiction: Delhi, India.</p>
+        <p>Organizer: Finlyt Solutions Pvt. Ltd.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
