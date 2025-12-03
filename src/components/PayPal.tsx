@@ -25,12 +25,12 @@ const PayPalModal = ({ isOpen, onClose }: any) => {
 
         <p className="text-sm text-gray-700 mt-4">
           Scan & Pay, then share the payment screenshot with us on WhatsApp:  
-          <span className="font-bold">+91 98101 13654</span>
+          <span className="font-bold">+91-98201-04856</span>
         </p>
 
         <p className="mt-2 text-xs font-medium text-gray-600">
           Or send directly to PayPal email:  
-          <span className="font-bold">umeshcg2020@gmail.com</span>
+          <span className="font-bold">support@opdsure.com</span>
         </p>
       </div>
     </div>

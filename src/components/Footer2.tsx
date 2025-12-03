@@ -13,20 +13,20 @@ const OPDSureFooter: React.FC = () => {
           <p className="mt-3">
             📞{" "}
             <a
-              href="tel:+919810113654"
+              href="tel:+919820104856"
               className="text-primary-light hover:text-white transition font-medium"
             >
-              +91-98101-13654
+              +91-98201-04856
             </a>
           </p>
 
           <p className="mt-2">
             📧{" "}
             <a
-              href="mailto:contact@opdsure.com"
+              href="mailto:support@opdsure.com"
               className="text-primary-light hover:text-white transition font-medium"
             >
-              contact@opdsure.com
+              support@opdsure.com
             </a>
           </p>
         </div>

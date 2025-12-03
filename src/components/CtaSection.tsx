@@ -71,7 +71,7 @@ export const CtaSection = () => {
           </div>
 
           <p className="text-sm text-primary-foreground/80 pt-4">
-            Questions? Email us at retreat@playoga.com or call +91-9810113654
+            Questions? Email us at support@opdsure.com or call +91-98201-04856
           </p>
         </div>
       </div>

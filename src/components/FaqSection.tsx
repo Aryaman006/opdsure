@@ -82,11 +82,11 @@ export const FaqSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <a href="mailto:retreat@playoga.com" className="text-primary font-bold hover:underline">
-              📧 retreat@playoga.com
+              📧 support@opdsure.com
             </a>
             <span className="hidden sm:inline text-muted-foreground">•</span>
-            <a href="https://wa.me/60123456789" className="text-primary font-bold hover:underline">
-              📱 WhatsApp: +60 123-456-789
+            <a href="https://wa.me/+919820104856" className="text-primary font-bold hover:underline">
+              📱 WhatsApp: +91-98201-04856
             </a>
           </div>
         </div>

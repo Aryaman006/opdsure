@@ -98,13 +98,13 @@ export const LogisticsSection = () => {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <a href="https://wa.me/60123456789" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
+              <a href="https://wa.me/+91-98201-04856" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
                 <Phone className="w-4 h-4" />
-                <span>WhatsApp: +60 123-456-789</span>
+                <span>WhatsApp: +91-98201-04856</span>
               </a>
-              <a href="mailto:retreat@playoga.com" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
+              <a href="mailto:support@opdsure.com" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
                 <Mail className="w-4 h-4" />
-                <span>retreat@playoga.com</span>
+                <span>support@opdsure.com</span>
               </a>
               <p className="text-sm text-muted-foreground mt-4">
                 Response time: Within 24 hours

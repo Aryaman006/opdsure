@@ -54,18 +54,17 @@ export const Hero = () => {
 
     {/* Logo */}
     <span className="block animate-fade-in">
-      <img
-        src="/logo.png"
-        alt="OPDsure Logo"
-        className="
-          h-16
-          sm:h-20
-          md:h-24
-          lg:h-28
-          object-contain
-          mx-auto
-        "
-      />
+     <img
+  src="/logo.png"
+  alt="OPDsure Logo"
+  className="
+    w-auto
+    h-32 sm:h-40 md:h-48 lg:h-56
+    object-contain
+    mx-auto
+  "
+/>
+
     </span>
 
     <span 
