@@ -61,7 +61,7 @@ const OPDSureFooter: React.FC = () => {
               <img src="/app.png" alt="App Store" className="h-12 md:h-14 rounded-lg shadow-lg hover:opacity-90" />
             </a>
 
-            <a href="https://play.google.com/store" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=io.app.opdsure" target="_blank">
               <img src="/play.png" alt="Google Play" className="h-12 md:h-14 rounded-lg shadow-lg hover:opacity-90" />
             </a>
           </div>

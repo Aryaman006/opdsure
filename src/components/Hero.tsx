@@ -89,7 +89,7 @@ export const Hero = () => {
             <div className="space-y-3 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <div className="flex items-center gap-3 text-lg md:text-xl font-bold text-foreground">
                 <Calendar className="w-6 h-6 text-primary flex-shrink-0" />
-                <span>January 23–27, 2026 (5 Days / 4 Nights)</span>
+                <span>January 27–31, 2026 (5 Days / 4 Nights)</span>
               </div>
 
               <div className="flex items-center gap-3 text-lg md:text-xl font-bold text-foreground">
