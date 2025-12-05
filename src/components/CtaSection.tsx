@@ -69,7 +69,7 @@ export const CtaSection = () => {
               asChild
               className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-lg px-10 py-6"
             >
-              <a href="/logo.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
+              <a href="/Malaysia-Wellness-Retreat-2026.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
                 Download Brochure
               </a>
             </Button>

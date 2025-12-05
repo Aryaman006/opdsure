@@ -119,7 +119,7 @@ export const Hero = () => {
 
               
               <Button size="lg" variant="outline" asChild className="w-full sm:w-auto bg-white border-2 border-primary/50 text-primary hover:bg-primary/5 text-base font-bold px-10 py-6">
-                <a href="/logo.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
+                <a href="/Malaysia-Wellness-Retreat-2026.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
                   Download Full Itinerary (PDF)
                 </a>
               </Button>
