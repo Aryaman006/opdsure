@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, Clock } from "lucide-react";
 import groupYogaImage from "@/assets/group-yoga.jpg";
+import PayPalModal from "./PayPal";
 
 export const CtaSection = () => {
+  const [isPayOpen, setIsPayOpen] = useState(false);
+
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background */}
@@ -30,11 +34,11 @@ export const CtaSection = () => {
 
           {/* Stats */}
           <div className="grid md:grid-cols-3 gap-6 py-8">
-          {[
-            { icon: Calendar, label: "5 Days / 4 Nights", value: "Jan 23-27, 2026" },
-            { icon: Users, label: "Limited to", value: "90 Participants" },
-            { icon: Clock, label: "Early Bird Ends", value: "Dec 20th" }
-          ].map((stat, index) => (
+            {[
+              { icon: Calendar, label: "5 Days / 4 Nights", value: "Jan 27-31, 2026" },
+              { icon: Users, label: "Limited to", value: "Only 12 Spots" },
+              { icon: Clock, label: "Early Bird Ends", value: "Dec 20th, 2025" }
+            ].map((stat, index) => (
               <div 
                 key={index}
                 className="bg-background/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 animate-scale-in"
@@ -49,22 +53,23 @@ export const CtaSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in-up">
+            
+            {/* UPDATED: PayPal Button */}
             <Button 
-              size="lg" 
-              asChild
+              size="lg"
+              onClick={() => setIsPayOpen(true)}
               className="bg-secondary hover:bg-secondary/90 text-foreground text-lg px-10 py-6 shadow-strong"
             >
-              <a href="https://rzp.io/rzp/bkUYcyDH" target="_blank" rel="noopener noreferrer">
-                Secure Your Spot Today
-              </a>
+              Secure Your Spot Today
             </Button>
+
             <Button 
               size="lg" 
               variant="outline"
               asChild
               className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-lg px-10 py-6"
             >
-              <a href="/logo.pdf" download="Tropical-Edge-Malaysia-Retreat-Brochure.pdf">
+              <a href="/logo.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
                 Download Brochure
               </a>
             </Button>
@@ -75,6 +80,10 @@ export const CtaSection = () => {
           </p>
         </div>
       </div>
+
+      {/* PayPal Modal Mount */}
+      <PayPalModal isOpen={isPayOpen} onClose={() => setIsPayOpen(false)} />
+
     </section>
   );
 };

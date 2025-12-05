@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Award, ArrowRight, Waves, Sparkles, Sun } from "lucide-react";
-import heroImage from "@/assets/meditation-beach-real.jpg";
+import heroImage from "@/assets/meditation-beach-real.webp";
 // import opdsureLogo from "@/assets/opdsure-logo.png";
 import PayPalModal from "./PayPal";
 
@@ -55,7 +55,7 @@ export const Hero = () => {
     {/* Logo */}
     <span className="block animate-fade-in">
      <img
-  src="/logo.png"
+  src="/logo.jpg"
   alt="OPDsure Logo"
   className="
     w-auto
@@ -105,18 +105,21 @@ export const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="space-y-4 pt-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-              <Button size="lg" asChild className="group relative w-full sm:w-auto bg-gradient-to-r from-primary via-accent to-primary hover:from-primary/90 hover:via-accent/90 hover:to-primary/90 text-white text-xl font-extrabold px-16 py-10 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden border-3 border-white/20">
-                <a href="https://rzp.io/rzp/bkUYcyDH" target="_blank" rel="noopener noreferrer">
-                  <span className="relative z-10 flex items-center gap-3">
-                    Book Your Spot Now
-                    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
-              </Button>
+              <Button
+  size="lg"
+  onClick={() => setIsPayOpen(true)}
+  className="group relative w-full sm:w-auto bg-gradient-to-r from-primary via-accent to-primary hover:from-primary/90 hover:via-accent/90 hover:to-primary/90 text-white text-xl font-extrabold px-16 py-10 shadow-glow hover:shadow-strong hover:scale-105 transition-all duration-300 overflow-hidden border-3 border-white/20"
+>
+  <span className="relative z-10 flex items-center gap-3">
+    Book Your Spot Now
+    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+  </span>
+  <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+</Button>
+
               
               <Button size="lg" variant="outline" asChild className="w-full sm:w-auto bg-white border-2 border-primary/50 text-primary hover:bg-primary/5 text-base font-bold px-10 py-6">
-                <a href="/logo.pdf" download="Tropical-Edge-Malaysia-Retreat-Itinerary.pdf">
+                <a href="/logo.pdf" download="Malaysia-Wellness-Retreat-2026.pdf">
                   Download Full Itinerary (PDF)
                 </a>
               </Button>

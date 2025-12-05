@@ -58,11 +58,11 @@ const OPDSureFooter: React.FC = () => {
           <h2 className="text-lg font-semibold text-white mb-4">Download Our App</h2>
           <div className="flex items-center gap-4">
             <a href="https://www.apple.com/in/app-store/" target="_blank">
-              <img src="/app.png" alt="App Store" className="h-12 md:h-14 rounded-lg shadow-lg hover:opacity-90" />
+              <img src="/app.jpg" alt="App Store" className="h-8 md:h-10 rounded-lg shadow-lg hover:opacity-90" />
             </a>
 
             <a href="https://play.google.com/store/apps/details?id=io.app.opdsure" target="_blank">
-              <img src="/play.png" alt="Google Play" className="h-12 md:h-14 rounded-lg shadow-lg hover:opacity-90" />
+              <img src="/play.jpg" alt="Google Play" className="h-14 md:h-16 rounded-lg shadow-lg hover:opacity-90" />
             </a>
           </div>
 
