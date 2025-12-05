@@ -24,7 +24,7 @@ const PayPalModal = ({ isOpen, onClose }: any) => {
           <h3 className="font-semibold text-lg mb-3 text-blue-600">Pay via PayPal</h3>
           
           <img
-            src="/qr.png"
+            src="/qr.jpg"
             alt="PayPal QR Code"
             className="mx-auto h-44 w-44 object-contain border rounded-lg shadow"
           />
