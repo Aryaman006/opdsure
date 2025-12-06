@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react"; // Updated Icon import
 import { useState } from "react";
 
 const PayPalModal = ({ isOpen, onClose }: any) => {
@@ -30,16 +31,30 @@ const PayPalModal = ({ isOpen, onClose }: any) => {
           />
 
           <p className="text-sm text-gray-700 mt-3">
-            After payment, send your payment screenshot on WhatsApp:  
+            After payment, send your payment screenshot on WhatsApp:
             <br />
-            <span className="font-bold">+91-98201-04856</span>
+            <a
+              href="https://wa.me/9810113654"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-semibold mt-2"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>+91-9810113654</span>
+            </a>
           </p>
 
           <p className="mt-2 text-xs font-medium text-gray-600">
-            Or send to PayPal email: 
-            <br />
-            <span className="font-bold">support@opdsure.com</span>
-          </p>
+  Or send to PayPal email:
+  <br />
+  <a
+    href={`mailto:support@opdsure.com?subject=Retreat Payment Confirmation&body=Hi,%0D%0A%0D%0AI have completed the payment. Please find the attached screenshot.%0D%0A%0D%0AThanks!`}
+    className="font-bold text-blue-600 hover:text-blue-700 underline"
+  >
+    support@opdsure.com
+  </a>
+</p>
+
         </div>
 
         {/* Divider */}

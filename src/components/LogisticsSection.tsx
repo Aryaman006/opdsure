@@ -1,4 +1,4 @@
-import { Plane, MapPin, Users, FileText, Phone, Mail, Sparkles } from "lucide-react";
+import { Plane, MapPin, Users, FileText, Phone, Mail, Sparkles, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const LogisticsSection = () => {
@@ -98,9 +98,10 @@ export const LogisticsSection = () => {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <a href="https://wa.me/+91-98201-04856" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
-                <Phone className="w-4 h-4" />
-                <span>WhatsApp: +91-98201-04856</span>
+              <a href="https://wa.me/9810113654" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
+                {/* <Phone className="w-4 h-4" /> */}
+                <MessageCircle className="w-5 h-5" />
+                <span>WhatsApp: +91-9810113654</span>
               </a>
               <a href="mailto:support@opdsure.com" className="flex items-center gap-2 text-primary hover:text-primary/80 font-semibold">
                 <Mail className="w-4 h-4" />
